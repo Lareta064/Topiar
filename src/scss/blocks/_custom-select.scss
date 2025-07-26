@@ -2,11 +2,15 @@
 	position: relative;
 	width: 100%;
 }
+.custom-select-trigger{
+	display: flex;
+	align-items: center;
+	width: 100%;
+	text-align: left;
+}
 .custom-select.round-select{
 	.custom-select-trigger {
-		display: block;
-		width: 100%;
-		text-align: left;
+		
 		background: white;
 		border-radius: 40px;
 		height: 56px;
@@ -43,7 +47,7 @@
 	top:100%;
 	left: 0;
 	right: 0;
-	padding-top: 10px;
+	
 	background-color: #fff;
 	margin-top: -20px;
 	max-height: 0;
@@ -51,6 +55,7 @@
 	-webkit-transition: max-height 0.3s ease;
 	transition: max-height 0.3s ease;
 	z-index: 10;
+	&>*:first-child{padding-top: 20px;}
 }
 .custom-option {
 	padding: 8px 24px;

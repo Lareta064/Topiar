@@ -19,6 +19,18 @@
 	  font-size: 26px;
 	}
 }
+.txt-20{
+	font-family: var(--second-family);
+	font-weight: 400;
+	font-size: 20px;
+	letter-spacing: -0.02em;
+}
 .txt-white{
 	color: white;
+}
+.icon-text{
+	display: flex;
+	align-items: center;
+	column-gap:13px;
+	img, svg{flex-shrink: 0;}
 }

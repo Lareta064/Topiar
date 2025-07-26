@@ -4,7 +4,7 @@ header.header
 			a.logo(href="index.html") ИЗГОРОДЬ
 			
 			//city select
-			.custom-select.city-select
+			.custom-select.round-select.city-select
 				.custom-select-trigger
 					span Санкт-Петербург
 				.custom-options
@@ -12,6 +12,12 @@ header.header
 					span.custom-option(data-value='Москва') Москва
 					span.custom-option(data-value='Нижний Новгород') Нижний Новгород
 					span.custom-option(data-value='Самара') Самара
+			//phone
+			.header-contacts
+				a.icon-text.txt-20(href="tel:+79184051058")
+					svg.svg-phone
+						use(href='../img/sprite.svg#svg-phone')
+					span +7 (918) 405-10-58
 			//menu-toggle
 			button.menu-toggle#menu-toggle
 				span

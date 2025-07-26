@@ -5,3 +5,34 @@
 	line-height: 1.44;
 	// color: #fdfff8;
 }
+header.header, header.header .container{
+	display: flex;
+	align-items: center;
+	width: 100%;
+}
+header.header{
+	background: #1f4719;
+	border-radius: 0 0 16px 16px;
+	height: 120px;
+	
+	.logo{
+		color: #fdfff8;
+		flex-shrink: 0;
+		margin-right: auto;
+		transition: .3s; 
+		&:hover{color: #94ab66;;}
+		
+	}
+	.header-content{
+		width: 100%;
+		column-gap:50px;
+		align-items: center;
+	}
+	.header-contacts a{color: white; transition: .3s; }
+	.header-contacts a:hover,
+	.header-contacts a:hover svg{color: #94ab66; }
+}
+.city-select{
+	width: 237px;
+	flex-shrink: 0;
+}
