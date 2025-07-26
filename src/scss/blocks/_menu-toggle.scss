@@ -11,6 +11,11 @@
   align-items: center;
   flex-shrink:0;
   &:hover{opacity: .65;}
+  @media (max-width: 767px) {
+     width: 35px;
+     height: 23px;
+     
+  }
 }
 
 .menu-toggle span {
@@ -20,6 +25,9 @@
   border-radius: 3px;
   background-color:  #94ab66;
   transition: 0.3s;
+  @media (max-width: 767px) {
+  height: 3px;
+  }
 }
 
 .menu-toggle span:after,
@@ -36,10 +44,16 @@
 
 .menu-toggle span:after {
   top: -14px;
+   @media (max-width: 767px) {
+     top: -10px;
+    }
 }
 
 .menu-toggle span:before {
   bottom: -14px;
+   @media (max-width: 767px) {
+     bottom: -10px;
+    }
 }
 
 .active.menu-toggle.active {
