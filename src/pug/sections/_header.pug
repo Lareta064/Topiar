@@ -1,10 +1,19 @@
 header.header
 	.container
-		a.logo(href="index.html")
-			img(src='./img/logo.png', srcset='./img/logo@2x.webp 2x'  height='44'  alt='logo')
-
-		//menu-toggle
-		button.menu-toggle#menu-toggle
-			span
+		.header-content.flex
+			a.logo(href="index.html") ИЗГОРОДЬ
+			
+			//city select
+			.custom-select.city-select
+				.custom-select-trigger
+					span Санкт-Петербург
+				.custom-options
+					span.custom-option(data-value='Санкт-Петербург') Санкт-Петербург
+					span.custom-option(data-value='Москва') Москва
+					span.custom-option(data-value='Нижний Новгород') Нижний Новгород
+					span.custom-option(data-value='Самара') Самара
+			//menu-toggle
+			button.menu-toggle#menu-toggle
+				span
 	
 

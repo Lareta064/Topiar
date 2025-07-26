@@ -55,32 +55,32 @@ section.inner-promo(
 @font-face {
     font-family: 'Comfortaa';
     font-style: normal;
-    font-weight: normal;
-    src: local('Comfortaa'), url('../fonts/Comfortaa_Regular.woff') format('woff');
+    font-weight: 400;
+    src: url('../fonts/Comfortaa_Regular.woff') format('woff');
 }
     
 
     @font-face {
-    font-family: 'Comfortaa Thin';
+    font-family: 'Comfortaa';
     font-style: normal;
-    font-weight: normal;
-    src: local('Comfortaa Thin'), url('../fonts/Comfortaa_Thin.woff') format('woff');
+    font-weight: 300;
+    src:  url('../fonts/Comfortaa_Thin.woff') format('woff');
     }
     
 
     @font-face {
-    font-family: 'Comfortaa Bold';
+    font-family: 'Comfortaa';
     font-style: normal;
-    font-weight: normal;
-    src: local('Comfortaa Bold'), url('../fonts/Comfortaa_Bold.woff') format('woff');
+    font-weight: 700;
+    src: url('../fonts/Comfortaa_Bold.woff') format('woff');
     }
 *, *:after, *:before {
 	box-sizing: border-box;
 	
 }
 :root {
-  --font-family: "Montserrat";
-  --second-family: "Montserrat Alternates";
+  --font-family: "Montserrat", sans-serif;
+  --second-family: "Montserrat Alternates", sans-serif;
   --third-family: "Comfortaa";
 //   --font3: "Roboto", sans-serif;
 //   --font4: "General Sans Variable", sans-serif;
