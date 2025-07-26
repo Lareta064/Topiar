@@ -1,0 +1,24 @@
+.h-96{
+	font-family: var(--second-family);
+	font-weight: 800;
+	font-size: 96px;
+	line-height: .48;
+	color: #8fb53e;
+	@media (max-width: 767px) {
+		font-size: 40px;
+		line-height: 1.27;
+	}
+}
+.h-64{
+	font-family: var(--second-family);
+	font-weight: 800;
+	font-size: 64px;
+	line-height: 1;
+	color: #8fb53e;
+	@media (max-width: 767px) {
+	  font-size: 26px;
+	}
+}
+.txt-white{
+	color: white;
+}

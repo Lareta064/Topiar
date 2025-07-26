@@ -4,19 +4,90 @@ section.inner-promo(
          -webkit-background-image: -webkit-image-set(url('./img/inner-promo.webp') 1x, url('./img/inner-promo@2x.webp') 2x);"
 )
  */
+ @font-face {
+    font-family: 'PP Object Sans';
+    src: url('../fonts/pp_object_sans.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+}
 @font-face {
-    font-family: 'Lato';
-    src: local('Lato Regular'), local('Lato-Regular'), url('../fonts/latoregular.woff2') format('woff2'), url('../fonts/latoregular.woff') format('woff');
+    font-family: 'Montserrat Alternates';
+    src: url('../fonts/MontserratAlternates-Regular.woff2') format('woff2');
     font-weight: 400;
     font-style: normal;
 }
+@font-face {
+    font-family: 'Montserrat Alternates';
+    src: url('../fonts/MontserratAlternates-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Montserrat Alternates';
+    src: url('../fonts/MontserratAlternates-ExtraBold.woff2') format('woff2');
+    font-weight: 800;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Comfortaa'), url('../fonts/Comfortaa_Regular.woff') format('woff');
+}
+    
 
+    @font-face {
+    font-family: 'Comfortaa Thin';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Comfortaa Thin'), url('../fonts/Comfortaa_Thin.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Comfortaa Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Comfortaa Bold'), url('../fonts/Comfortaa_Bold.woff') format('woff');
+    }
 *, *:after, *:before {
 	box-sizing: border-box;
 	
 }
 :root {
-	
+  --font-family: "Montserrat";
+  --second-family: "Montserrat Alternates";
+  --third-family: "Comfortaa";
+//   --font3: "Roboto", sans-serif;
+//   --font4: "General Sans Variable", sans-serif;
+   --font5: "PP Object Sans";
+//   --font6: "Lato", sans-serif;
+//   --font7: "Muller", sans-serif;
+//   --font8: "Tilda Sans", sans-serif;
 }
 html {
 	scroll-behavior: smooth;
@@ -27,11 +98,15 @@ body {
 	margin: 0;
 	padding: 0;
 	font-family: var(--font-family);
-	font-weight: 400;
-	
+	font-weight: 300;
+	font-size: 24px;
+	color: #000;
+	line-height: normal;
 	-webkit-font-smoothing: subpixel-antialiased;
 	-moz-osx-font-smoothing: auto;
-	
+	@media (max-width: 767px) {
+	  font-size: 17px;
+	}
 }
 .lock{
 	overflow: hidden; 
@@ -111,5 +186,17 @@ input::placeholder, textarea::placeholder{
 }
 
 .container{
-	
+	width: 100%;
+	max-width: 1680px;
+	padding: 0 80px;
+	margin: 0 auto;
+	@media (max-width: 1279px) {
+	  padding: 0 60px;
+	}
+	@media (max-width: 1023px) {
+	  padding: 0 30px;
+	}
+	@media (max-width: 767px) {
+	  padding: 0 20px;
+	}
 }
