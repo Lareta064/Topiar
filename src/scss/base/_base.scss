@@ -184,7 +184,19 @@ input::placeholder, textarea::placeholder{
 	font-family: inherit;
 	font-size: inherit;
 }
-
+.main{
+	padding-top: 78px;
+	padding-bottom: 120px;
+	display: flex;
+	flex-direction: column;
+	row-gap:120px;
+	&>*{width: 100%; }
+	@media (max-width: 767px) {
+	  padding-top: 30px;
+	  padding-bottom: 80px;
+	  row-gap:80px;
+	}
+}
 .container{
 	width: 100%;
 	max-width: 1680px;

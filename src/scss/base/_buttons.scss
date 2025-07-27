@@ -1,1 +1,26 @@
 
+.btn{
+	display: inline-flex;
+	padding-left: 34px;
+	padding-right: 34px;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	white-space: nowrap;
+	height: 63px;
+	font-family: var(--font-family);
+	font-weight: 600;
+	font-size: 26px;
+	color: #000;
+	border: 2px solid #8fb53e;
+	border-radius:40px;
+	min-width: 187px;
+}
+.btn.btn--white{
+	background-color: #fff;
+	color: #000;
+}
+.btn.btn--accent{
+	color: #fff;
+	background-color:  #8fb53e;
+}

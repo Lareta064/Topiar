@@ -3,11 +3,16 @@
 
 @import "base/_typography";
 @import "base/_vendore";
+@import "base/_buttons";
+
 @import "base/_icons";
 @import "blocks/_menu-toggle";
 @import "blocks/_custom-select";
 
 @import "sections/_header";
+@import "blocks/_main-menu";
+
+@import "sections/_promo-main";
 @import "sections/_footer";
 
 

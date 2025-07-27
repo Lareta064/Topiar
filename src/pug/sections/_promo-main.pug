@@ -1,0 +1,33 @@
+//PROMO
+section.promo.promo-main
+	.container
+		.promo-wrapper
+			.promo-bg
+				img.img-cover(src='./img/promo.webp', srcset='./img/promo@2x.webp 2x' width='1520' height='853' alt='img')
+			.promo-absolute
+				//left content
+				.promo-left.flex-col
+					.promo-head
+						h1.h-96 ИЗГОРОДЬ
+						.txt-40 Технологично, быстро, надежно
+					
+					//button-links
+					.promo-buttons.flex-col
+						a.btn.btn--white(href="catalogy.html") Каталог
+						a.btn.btn--accent(href="#!") Оставить заявку
+				//right content
+				.promo-right
+					.round-label.round-label--reverse
+						.round-label__icon
+							svg.svg-star
+								use(href='./img/sprite.svg#svg-star')
+						span 10 лет<br>на рынке
+					
+					.round-label.label-tree
+						.round-label__icon
+							svg.svg-tree
+								use(href='./img/sprite.svg#svg-tree')
+						span
+							big + 100
+							br
+							| решений
