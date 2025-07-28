@@ -9,7 +9,7 @@ section.promo.promo-main
 				.promo-left.flex-col
 					.promo-head
 						h1.h-96 ИЗГОРОДЬ
-						.txt-40 Технологично, быстро, надежно
+						.txt-40 Технологично, быстро,<br>надежно
 					
 					//button-links
 					.promo-buttons.flex-col
@@ -17,11 +17,14 @@ section.promo.promo-main
 						a.btn.btn--accent(href="#!") Оставить заявку
 				//right content
 				.promo-right
-					.round-label.round-label--reverse
+					.round-label.label-exper
 						.round-label__icon
 							svg.svg-star
 								use(href='./img/sprite.svg#svg-star')
-						span 10 лет<br>на рынке
+						span
+							big 10 лет
+							br
+							| на рынке
 					
 					.round-label.label-tree
 						.round-label__icon
@@ -31,3 +34,8 @@ section.promo.promo-main
 							big + 100
 							br
 							| решений
+
+		//BUTTONS FOR MOBILE
+		.promo-buttons.flex-col.flex-mobile
+			a.btn.btn--white.xs-100(href="catalogy.html") Каталог
+			a.btn.btn--accent.xs-100(href="#!") Оставить заявку
