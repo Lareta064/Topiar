@@ -1,0 +1,97 @@
+.about{
+	.about-text{
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		width: 36vw;
+		max-width: 640px;
+		p{
+			position: relative;
+			z-index: 2;
+			max-width: 560px;
+			font-size: 24px;
+			&:nth-child(2n){
+				text-align: right; margin-top: 33px;
+				text-indent: 50px;
+				margin-left: auto;
+				@media (max-width: 1279px) {
+				  text-indent: 0;
+				  margin-top: 20px;
+				}
+			}
+			@media (max-width: 1919px) {
+			  font-size: clamp(17px, 0.42vw + 10px, 24px);
+			}
+			@media (max-width: 767px) {
+			  font-size: 17px;
+			}
+		}
+		&:after{
+			content:'';
+			position: absolute;
+			width: 100%;
+			max-width: 686px;;
+			
+			aspect-ratio: 646/386;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);	
+			background-image: url('../img/about-decore.webp');
+			background-size: contain;
+			background-repeat: no-repeat;
+			background-position: center;
+			@media (max-width: 1023px) {
+				max-width: 460px;
+			}
+			
+		}
+		.btn{margin-top: auto; max-width: 297px;}
+		@media (max-width: 1919px) {
+			.about-desk{padding-bottom: 40px;}
+		}
+		@media (max-width: 1023px) {
+		 .about-desk{padding-bottom: 30px;}
+		}
+		@media (max-width: 767px) {
+		  .btn{display: none;}
+		}
+	}
+	.about-img{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		
+		img{
+			width: 100%;
+			height: 100%;
+			object-fit: contain;
+			max-height: 507px;
+			max-width: 690px;
+		}
+	}
+}
+.about-content.two-columns{
+	column-gap:6.5vw;
+	.about-btn-mobile{display: none;}
+	@media (max-width: 1279px) {
+	  column-gap:30px;
+	}
+	@media (max-width: 1023px) {
+		.about-text{
+			width: unset;
+			flex: 1;
+		}
+	}
+	@media (max-width: 767px) {
+		grid-template-columns: 1fr;
+		.about-btn-mobile{
+			display: flex;
+			flex-direction: column;
+			margin-top: 10px;
+		}
+		.about-img{
+			padding-left: 30px;
+			padding-right: 30px;
+		}
+	}
+}
