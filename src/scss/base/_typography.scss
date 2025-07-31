@@ -65,8 +65,20 @@
 	font-size: 20px;
 	letter-spacing: -0.02em;
 }
-.txt-white{
-	color: white;
+.txt-white{color: white;}
+.a-gradient{
+	text-decoration: none;
+	background-repeat: no-repeat;
+	background-position: center bottom 1px;
+	background-size: 100% 1px;
+	background-image: linear-gradient(to right, black, black);
+	transition: .3s; 
+}
+.a-gradient:hover {
+	opacity: .7;
+}
+.txt-white .a-gradient{
+	background-image: linear-gradient(to right, white, white);
 }
 .txt-center{text-align: center; margin-inline: auto;}
 .br-16{

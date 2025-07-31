@@ -3,6 +3,7 @@ section.inner-promo(
   style="background-image: image-set(url('./img/inner-promo.webp') 1x, url('./img/inner-promo@2x.webp') 2x);
          -webkit-background-image: -webkit-image-set(url('./img/inner-promo.webp') 1x, url('./img/inner-promo@2x.webp') 2x);"
 )
+ //- (60 - 26) / (1919 - 320) * 100 ≈ 2.1vw
  */
  @font-face {
     font-family: 'PP Object Sans';

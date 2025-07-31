@@ -4,9 +4,11 @@
 @import "base/_typography";
 @import "base/_vendore";
 @import "base/_buttons";
+@import "base/_form";
 
 @import "base/_icons";
 @import "blocks/_menu-toggle";
+
 @import "blocks/_custom-select";
 
 @import "sections/_header";
@@ -15,7 +17,10 @@
 @import "sections/_promo-main";
 @import "sections/_about-section";
 @import "sections/_benefits";
+@import "sections/_sale-bonus";
 
+@import "blocks/_product-card";
+@import "sections/_catalogy-slider";
 
 @import "sections/_footer";
 

@@ -1,0 +1,142 @@
+
+.product-card, .product-card__body{
+    display: flex;
+	flex-direction: column;
+}
+.product-card{
+	border: 2px solid #8fb53e;
+    border-radius: 16px;
+    padding: 10px;
+	background: white;
+	row-gap: 23px;
+	&__img{
+		
+		overflow: hidden;
+		height: 162px;
+		aspect-ratio: 258/162;
+		width: 100%;
+		flex-shrink: 0;
+		img{
+			aspect-ratio: 258/162;
+		}
+		@media (max-width: 767px) {
+		
+		}
+	}
+	&__body{
+		flex-grow: 1;
+		font-size: 1em;
+		row-gap: 1.2em;
+
+	}
+	&__title{
+		font-family: var(--third-family);
+		font-weight: 700;
+		font-size: 30px;
+		color: #000;
+		@media (max-width: 767px) {
+		font-size: remy(12);
+		line-height: 1.13;
+		letter-spacing: 0.03em;
+		}
+	}
+	&__footer{
+		display: flex;
+		font-size: 1em;
+		column-gap:1.5em;
+		align-items:flex-end;
+		
+	}
+	.fs-10{
+		font-family: var(--font-family);
+		font-weight: 500;
+		font-size: 10px;
+		line-height: 110%;
+		letter-spacing: 0.03em;
+		color: #132439;
+	}
+	.cart-btn{margin-left: auto; background-color: #a9a9a9;}
+	@media (max-width: 767px) {
+		padding: .7em;
+		 border-radius: .9em .9em 1.8em .9em;
+	}
+
+}
+.product-card__price{
+	height: 50px;
+	display: flex;
+	flex-direction: column;
+	margin-top: auto;
+	.price-old{
+		font-family: var(--third-family);
+		font-weight: 400;
+		font-size: 20px;
+		letter-spacing: -0.02em;
+		text-transform: uppercase;
+		text-decoration: line-through;
+		color: #a9a9a9;
+	}
+	.price-val{
+		margin-top: auto;
+		font-family: var(--third-family);
+		font-weight: 700;
+		font-size: 23px;
+		line-height: 100%;
+		letter-spacing: 0.03em;
+		color: #132439;
+	}
+}
+.cart-btn.cart-btn--animate{
+	position: relative;
+	transition: .3s; 
+	svg{transition: .1s; }
+}
+.plus-anim {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	stroke: white;
+	stroke-width: 2;
+	stroke-linecap: round;
+	pointer-events: none;
+	width: 22px;
+	height: 22px;
+}
+
+.plus-anim line {
+  stroke-dasharray: 11;  
+  stroke-dashoffset: 11;
+  transition: stroke-dashoffset 0.4s ease-out;
+}
+
+.cart-btn.cart-btn--animate:hover svg.svg-cart {
+	opacity: 0;
+}
+
+.cart-btn.cart-btn--animate:hover .plus-anim line {
+	stroke-dashoffset: 0;
+}
+.cart-btn{
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 40px;
+	flex-shrink: 0;
+	width: 44px;
+	height: 44px;
+	line-height: 1;
+	background-color: #a9a9a9;;
+	svg.svg-cart{color: white;}
+	transition: .3s; 
+	&:hover{opacity: .8;}
+	
+	@media (max-width: 767px) {
+	  width: 30px;
+	  height: 30px;
+	  .svg-cart{
+		width: 17px;
+		height: 14px;
+	  }
+	}
+}

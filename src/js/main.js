@@ -66,7 +66,34 @@ document.addEventListener("DOMContentLoaded", function () {
 		}
     
 });
-
+    //PRODUCT SLIDER
+    const productSwipers = document.querySelectorAll('.product-swiper');
+    productSwipers.forEach((swiperEl, index) => {
+      new Swiper(swiperEl, {
+        slidesPerView: 'auto',
+        spaceBetween: 10,
+        scrollToSlides:2,
+        speed:600,
+        navigation: {
+          nextEl: swiperEl.querySelector('.product-swiper-next'),
+          prevEl: swiperEl.querySelector('.product-swiper-prev'),
+        },
+        breakpoints: {
+          768: {
+            slidesPerView: 4,
+             
+          },
+          1200:{
+            slidesPerView: 4,
+            spaceBetween: 20,
+          },
+          1440:{
+            slidesPerView: 5,
+            spaceBetween: 20
+          }
+        }
+      });
+    });
 
 document.addEventListener('DOMContentLoaded', function() {
   const tabsContainers = document.querySelectorAll('.tabs-container');
