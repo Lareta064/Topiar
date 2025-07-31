@@ -68,6 +68,13 @@
 .txt-white{
 	color: white;
 }
+.txt-center{text-align: center; margin-inline: auto;}
+.br-16{
+	border-radius: 16px;
+	@media (max-width: 1023px) {
+	border-radius: 12px;
+	}
+}
 .icon-text,.phone-link{
 	display: flex;
 	align-items: center;
