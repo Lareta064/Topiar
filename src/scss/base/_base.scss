@@ -31,6 +31,12 @@ section.inner-promo(
 }
 @font-face {
     font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Montserrat';
     src: url('../fonts/Montserrat-Regular.woff2') format('woff2');
     font-weight: 400;
     font-style: normal;
@@ -101,6 +107,8 @@ body {
 	font-family: var(--font-family);
 	font-weight: 300;
 	color: #000;
+	font-size: 24px;
+	
 	line-height: normal;
 	-webkit-font-smoothing: subpixel-antialiased;
 	-moz-osx-font-smoothing: auto;
