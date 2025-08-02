@@ -16,6 +16,12 @@ header.header{
 	background: #1f4719;
 	border-radius: 0 0 16px 16px;
 	height: 120px;
+	@media (max-width: 1439px) {
+	  height: 100px;
+	}
+	@media (max-width: 1199px) {
+	  height: 80px;
+	}
 	@media (max-width: 767px) {
 		height: 55px;
 	}

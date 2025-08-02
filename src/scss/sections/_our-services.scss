@@ -26,12 +26,19 @@
 		flex-direction: column;
 		justify-content: space-between;
 		row-gap:20px;
+		@media (max-width: 1364px) {
+			font-size: 20px;
+			padding: 34px 20px;
+		}
 	}
 	.h-30{
 		font-family: var(--third-family);
 		font-weight: 700;
 		font-size: 30px;
-		color: #000
+		color: #000;
+		@media (max-width: 1364px) {
+		  font-size: 26px;
+		}
 	}
 }
 .services-item-hedge{

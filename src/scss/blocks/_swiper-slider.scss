@@ -1,33 +1,50 @@
 .swiper .swiper-button-next, .swiper  .swiper-button-prev{
-	border: 1px solid var(--color-yarko-siniy-s-logo);
-	width: remy(55);
-	height:remy(55);
+	position: relative;
+	inset:auto;
+	transform: unset;
+	width: 62px;
+	height: 62px;
 	border-radius: 50%;
-	flex-shrink: 0;
-	background: var(--color-belyy);
-	display: flex;
-	justify-content: center;align-items: center;
+	border:1px solid #8FB53E;
+	margin: 0;
 	&:after, &:before{display: none;}
+	@media (max-width: 1199px) {
+	width: 54px;
+	height:54px;
+	}
 	@media (max-width: 767px) {
-	width: remy(40);
-	height: remy(40);
+	width: 40px;
+	height: 40px;
 	}
 }
 .swiper .swiper__nav{
 	position: relative;
 	display: flex;
-	justify-content: flex-end;
+	column-gap:26px;
 	align-items: center;
-	bottom: auto;
-	margin-top: 2rem;
-	column-gap:remy(10);
-	.swiper-button-next,.swiper-button-prev{
+	justify-content: flex-end;
+	margin-top: 40px;
+	.product-swiper-next,
+	.product-swiper-prev{
 		position: relative;
-		top:auto;
-		right: auto;
-		left: auto;
-		margin-top: 0;
+		inset:auto;
+		transform: unset;
+		width: 62px;
+		height: 62px;
+		border-radius: 50%;
+		border:1px solid #8FB53E;
+		margin: 0;
 	}
+	.product-swiper-next{padding-left: 3px;}
+	.product-swiper-prev{padding-right: 3px;}
+	.swiper-button-next:after, .swiper-button-prev:after{font-size: 24px; color: #1F4719;}
+}
+.swiper-wrapper{
+	display: flex;
+}
+.swiper-slide{
+	height: unset;
+	display: flex;
 }
 .swiper .swiper-pagination{
 	display: flex;
